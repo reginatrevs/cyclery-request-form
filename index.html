@@ -1,19 +1,31 @@
 <!doctype html>
 <html lang="en">
-  <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
   <body>
-    <form name="crx-bike-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
-  <input name="bot-field" />
-  <input type="hidden" name="form-name" value="crx-bike-request" />
-  <input name="name" />
-  <input name="email" />
-  <input name="phone" />
-  <input name="brand" />
-  <input name="interest" />
-  <textarea name="notes"></textarea>
-  <input name="page_url" />
-  <input name="product" />
-</form>
+    <!-- Netlify form registration (hidden) -->
+    <form
+      name="crx-bike-request"
+      method="POST"
+      action="/thank-you.html"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      hidden
+    >
+      <input name="bot-field" />
+      <input type="hidden" name="form-name" value="crx-bike-request" />
+
+      <input name="name" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="brand" />
+      <input name="interest" />
+      <textarea name="notes"></textarea>
+      <input name="page_url" />
+      <input name="product" />
+    </form>
 
     OK
   </body>
